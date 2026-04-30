@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/gear_logo.png" type="image/png">
+    <title>Gear - Login</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div id="navbar">
+        <!-- navbar-left -->
+        <div id="navbar-left">
+            <img src="../Assets/gear_logo.png" alt="Gear" id="logo">
+            <a href="../Main/main.html">STORE</a>
+            <a href="../Profile/profile.html" id="active">PROFILE</a>
+            <a href="../Library/library.html">LIBRARY</a>
+        </div>
+        <!-- navbar-right -->
+        <div id="navbar-right">
+            <div class="img-background">
+                <img src="../Assets/friends.png" alt="friend" id="fren">
+            </div>
+            <div class="noti-background">
+                <img src="../Assets/notification.png" alt="friend" class="noti first_image">
+                <img src="../Assets/notification_1.png" alt="friend" class="noti second_image">
+            </div>
+            <div class="user-background">
+                <img src="../Assets/user-not-found.png" alt="Profile" class="profile-img">
+                <span class="username">Login</span>
+                <span class="balance"></span>
+                <span class="dropdown-icon">▾</span>
+            </div>
+            <div id="other-nav">
+                <a href="https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe" id="install">Install</a>
+                <a href="https://help.steampowered.com/en/" id="help">Help</a>
+            </div>
+        </div>
+    </div>
+    <div id="log-in-body">
+        <h2>Log In</h2>
+        <div id="form-block">
+            <form id="login-form" method="post">
+                <div class="input-block">
+                    <label for="username">Insert with your Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="input-block">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="input-block">
+                    <div class="checkbox-block">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                </div>
+                <div class="input-block">
+                    <button>Log in</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div id="footer">
+        <img src="../Assets/full-gear-logo-white.png" alt="Gear Logo" id="footer-logo">
+        <div id="copyright-block">
+            <img src="../Assets/HALVe-logo.png" alt="Halve Copyright">
+            <p>© 2025 Halve Corporation. All rights reserved. All trademarks are property of their respective owners in INA and other countries.
+VAT included in all prices where applicable.</p>
+        </div>
+        <div class="links-list">
+            <a href="https://www.valvesoftware.com/en/about" target="_blank" rel="noopener noreferrer">About Halve</a>
+            <a href="https://www.valvesoftware.com/en/" target="_blank" rel="noopener noreferrer">Jobs</a>
+            <a href="https://partner.steamgames.com/" target="_blank" rel="noopener noreferrer">Gearworks</a>
+            <a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="noopener noreferrer">Gear Distribution</a>
+            <a href="https://help.steampowered.com/en/" target="_blank" rel="noopener noreferrer">Support</a>
+        </div>
+        <div class="links-list">
+            <a href="https://store.steampowered.com/privacy_agreement/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <a href="https://store.steampowered.com/legal/" target="_blank" rel="noopener noreferrer">Legal</a>
+            <a href="https://store.steampowered.com/subscriber_agreement/" target="_blank" rel="noopener noreferrer">Gear Subscriber Agreement</a>
+            <a href="https://store.steampowered.com/steam_refunds/" target="_blank" rel="noopener noreferrer">Refunds</a>
+            <a href="https://store.steampowered.com/account/cookiepreferences/" target="_blank" rel="noopener noreferrer">Cookies</a>
+        </div>
+        <div id="socials-list">
+            <a href="http://www.facebook.com/Steam" target="_blank" rel="noopener noreferrer">
+                <div class="socials-button">
+                    <img src="../Assets/facebook-icon.png" alt="FB">
+                </div>
+            </a>
+            <a href="https://x.com/steam" target="_blank" rel="noopener noreferrer">
+                <div class="socials-button">
+                    <img src="../Assets/twitter-x-icon.png" alt="X">
+                </div>
+            </a>
+            <a href="https://bsky.app/profile/steampowered.com" target="_blank" rel="noopener noreferrer">
+                <div class="socials-button">
+                    <img src="../Assets/bluesky-icon.png" alt="bsky">
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="logscript.js"></script>
+    <script src="../Database/database2.js"></script>
+</body>
+</html>

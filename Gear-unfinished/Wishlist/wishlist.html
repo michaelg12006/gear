@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/gear_logo.png" type="image/png">
+    <title>Gear - Wishlist</title>
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+    <div id="navbar">
+        <!-- navbar-left -->
+        <div id="navbar-left">
+            <img src="../Assets/gear_logo.png" alt="Gear" id="logo">
+            <a href="../Main/main.html" id="active">STORE</a>
+            <a href="../Profile/profile.html">PROFILE</a>
+            <a href="../Library/library.html">LIBRARY</a>
+        </div>
+        <!-- navbar-right -->
+        <div id="navbar-right">
+            <div class="img-background">
+                <img src="../Assets/friends.png" alt="friend" id="fren">
+            </div>
+            <div class="noti-background">
+                <img src="../Assets/notification.png" alt="friend" class="noti first_image">
+                <img src="../Assets/notification_1.png" alt="friend" class="noti second_image">
+            </div>
+            <div id="user-menu">
+                <div class="user-background">
+                    <img src="../Assets/user-not-found.png" alt="Profile" class="profile-img">
+                    <span class="username">Login</span>
+                    <span class="balance"></span>
+                    <span class="dropdown-icon">▾</span>
+                </div>
+                <div class="dropdown-button hidden">
+                    <button id="logout-btn">Logout</button>
+                </div>
+            </div>
+            <div id="other-nav">
+                <a href="https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe" id="install">Install</a>
+                <a href="https://help.steampowered.com/en/" id="help">Help</a>
+            </div>
+        </div>
+    </div>
+    <div id="below-navbar">
+        <!-- below-navbar-left -->
+        <div id="below-navbar-left">
+            <a href="../Main/main.html" class="bnl-block">Home</a>
+            <a href="../Main/main.html#browse" class="bnl-block" >Browse</a>
+            <a href="" class="bnl-block" >Discovery</a>
+        </div>
+        <!-- below-navbar-right -->
+        <div id="below-navbar-right">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">
+                    <img src="../Assets/search.png" alt="Search">
+                </button>
+            </div>
+            <a href="../Wishlist/wishlist.html">Wishlist</a>
+            <a href="../Cart/cart.html">Cart</a>
+        </div>
+    </div>
+    <div id="wishlist-body">
+        <div id="wishlist-list">
+            <div id="wishlist-header">
+                <span>Your Wishlist</span>
+                <span id="count">(-)</span>
+            </div>
+            <div class="wishlists">
+                <div class="wishlist-card">
+                    <img src="../Assets/Games/baksosimulator.jpg" alt="">
+                    <div class="wishlist-desc">
+                        <div class="wishlist-title">
+                            <span>Bakso Simulator</span>
+                            <img src="../Assets/icon_platform_win.png" alt="Windows">
+                        </div>
+                        <div class="wishlist-info">
+                            <span>Tags</span>
+                            <div class="price">
+                                <span class="final-price">$7.99</span>
+                                <span class="normal-price">$24.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <img src="../Assets/full-gear-logo-white.png" alt="Gear Logo" id="footer-logo">
+        <div id="copyright-block">
+            <img src="../Assets/HALVe-logo.png" alt="Halve Copyright">
+            <p>© 2025 Halve Corporation. All rights reserved. All trademarks are property of their respective owners in INA and other countries.
+VAT included in all prices where applicable.</p>
+        </div>
+        <div class="links-list">
+            <a href="https://www.valvesoftware.com/en/about" target="_blank" rel="noopener noreferrer">About Halve</a>
+            <a href="https://www.valvesoftware.com/en/" target="_blank" rel="noopener noreferrer">Jobs</a>
+            <a href="https://partner.steamgames.com/" target="_blank" rel="noopener noreferrer">Gearworks</a>
+            <a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="noopener noreferrer">Gear Distribution</a>
+            <a href="https://help.steampowered.com/en/" target="_blank" rel="noopener noreferrer">Support</a>
+        </div>
+        <div class="links-list">
+            <a href="https://store.steampowered.com/privacy_agreement/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <a href="https://store.steampowered.com/legal/" target="_blank" rel="noopener noreferrer">Legal</a>
+            <a href="https://store.steampowered.com/subscriber_agreement/" target="_blank" rel="noopener noreferrer">Gear Subscriber Agreement</a>
+            <a href="https://store.steampowered.com/steam_refunds/" target="_blank" rel="noopener noreferrer">Refunds</a>
+            <a href="https://store.steampowered.com/account/cookiepreferences/" target="_blank" rel="noopener noreferrer">Cookies</a>
+        </div>
+        <div id="socials-list">
+            <a href="http://www.facebook.com/Steam" target="_blank" rel="noopener noreferrer">
+                <div class="socials-button">
+                    <img src="../Assets/facebook-icon.png" alt="FB">
+                </div>
+            </a>
+            <a href="https://x.com/steam" target="_blank" rel="noopener noreferrer">
+                <div class="socials-button">
+                    <img src="../Assets/twitter-x-icon.png" alt="X">
+                </div>
+            </a>
+            <a href="https://bsky.app/profile/steampowered.com" target="_blank" rel="noopener noreferrer">
+                <div class="socials-button">
+                    <img src="../Assets/bluesky-icon.png" alt="bsky">
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="wishlist.js"></script>
+    <script src="../Database/database.js"></script>
+</body>
+</html>
