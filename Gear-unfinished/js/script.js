@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(logout){
             logout.addEventListener('click', () => {
                 localStorage.removeItem('currentUser');
-                window.location.href = "main.html";
+                window.location.href = "index.html";
             })
         }
     }
