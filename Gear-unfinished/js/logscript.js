@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             if(exist.password === passwordInput){
                 localStorage.setItem("currentUser", JSON.stringify(exist));
                 alert("Login success");
-                window.location.href = "main.html";
+                window.location.href = "index.html";
             }
             else{
                 alert("Wrong Password");
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                     localStorage.setItem('users', JSON.stringify(users));
                     localStorage.setItem("currentUser", JSON.stringify(newUser));
                     console.log("Created");
-                    window.location.href = "main.html";
+                    window.location.href = "index.html";
                 }
                 else{
                     alert("Account creation cancelled.");
